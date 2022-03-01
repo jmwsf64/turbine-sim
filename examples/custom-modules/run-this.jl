@@ -1,2 +1,3 @@
 include("myModule.jl")
-hello()
+
+myModule.hello()

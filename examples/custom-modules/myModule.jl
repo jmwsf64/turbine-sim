@@ -1,3 +1,7 @@
+module myModule
+
 function hello()
-    print("Hello World!")
+    println("Hello World!")
+end
+
 end
