@@ -7,13 +7,18 @@
 ## Notes
 
 * Uses Python/Pyfoam for computational code
-* Uses Qt5 for GUI windows
+* GUI Development
+  * Version 1 will use tkinter
+  * Version 2 will use Qt5
+    * Can be fully developed before Version 1 Release
+    * Commercial license must be purchased before this version is released
 
 ## Code Structure
 
 * Mesh creation from stl input (allow for saving of mesh)
 * Class for inputs to fluid solver
-  * 
+  * Boundaries based on stl inputs
+  * Need to allow user to select other parameters
 * Fictitious domain class
 * Fluid Simulation class
 
