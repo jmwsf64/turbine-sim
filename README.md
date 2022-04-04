@@ -8,8 +8,8 @@
 
 * Uses Python/Pyfoam for computational code
 * GUI Development
-  * Version 1 will use tkinter
-  * Version 2 will use Qt5
+  * Version 1 will use [Kivy](https://kivy.org/doc/stable/)
+  * Version 2 can use Qt5 given enough income
     * Can be fully developed before Version 1 Release
     * Commercial license must be purchased before this version is released
 
