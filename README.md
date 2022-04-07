@@ -27,3 +27,11 @@
 * Find fast stl reader (or develop my own)
 * Create classes for relevant objects
 * Figure out how to set up and run Pyfoam cases
+
+## Required Modules
+
+* os
+* numpy
+* numpy-stl
+* kivy
+* plyer

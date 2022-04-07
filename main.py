@@ -1,12 +1,10 @@
-from lib.modules import moduleSTL as M_STL
+from lib.modules import classSTL as M_STL
 import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 from plyer import filechooser
-from kivy.properties import (
-    NumericProperty, ReferenceListProperty, ObjectProperty, BooleanProperty
-)
+from kivy.properties import (NumericProperty, ReferenceListProperty, ObjectProperty, BooleanProperty)
 
 
 # ======================================================================================================================
