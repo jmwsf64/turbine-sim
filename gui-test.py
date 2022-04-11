@@ -1,4 +1,3 @@
-from lib.modules.readers import classSTL as M_STL
 from kivy.app import App
 from kivy.uix.button import Button
 from plyer import filechooser
