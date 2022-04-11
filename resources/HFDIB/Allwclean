@@ -1,0 +1,7 @@
+#!/bin/sh
+
+wclean src
+
+wclean solvers/pisoHFDIBFoam
+wclean solvers/pimpleHFDIBFoam
+
