@@ -1,17 +1,13 @@
-from lib.modules import classSTL as M_STL
-import kivy
+from lib.modules.readers import classSTL as M_STL
 from kivy.app import App
-from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 from plyer import filechooser
-from kivy.properties import (NumericProperty, ReferenceListProperty, ObjectProperty, BooleanProperty)
-
 
 # ======================================================================================================================
 # example stl file import
 # ======================================================================================================================
-# stlIn = M_STL.stlInput()
-# box = stlIn.importSTL('lib/files/box.stl')
+stlIn = M_STL.stlInput()
+box = stlIn.importSTL('lib/files/box.stl')
 
 
 # ======================================================================================================================
