@@ -6,11 +6,11 @@ from plyer import filechooser
 # ============================
 # kivy application development
 # ============================
-class MyApp(App):
+class SpinSimApp(App):
 
     def build(self):
-        self.icon = r'lib/files/icons/spin-sim.png'
-        return Button(text='Hello World')
+        spinSimApp = SpinSim()
+        return spinSimApp
 
 
 if __name__ == '__main__':
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     # -------------------
     # hello world example
     # -------------------
-    MyApp().run()
+    SpinSimApp().run()
 
     # -------------------
     # file select example
