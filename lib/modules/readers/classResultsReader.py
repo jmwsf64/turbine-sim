@@ -49,6 +49,11 @@ class resultsReader:
         # ----------------------------
         # read order of arrays in file
         # ----------------------------
+        headerData = header.split(self.separator)
+        arrayOrder = headerData[0].split(self.delimiter)
+        sheetOrder = headerData[1].split(self.delimiter)
+        rowOrder   = headerData[2].split(self.delimiter)
+        colOrder   = headerData[3].split(self.delimiter)
 
         # ------------------
         # read scramble keys
