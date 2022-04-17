@@ -1,16 +1,8 @@
-# PROBLEMS
+# PROBLEM
 
 * MUST FIND CFD SOLVER TO USE. OPENFOAM IS LINUX ONLY.
-* Maybe copy/edit solvers from OpenFoam source code?
-  * Yeah that's what I'm going to have to do
-  * Fuck me
-  * That's going to add so much to this project
-  * Am I going to have to learn C++ again just to read the code?
-  * Yes
-  * Ugh
-  * Fuck me
 
-# SOLUTIONS
+# SOLUTION
 
 Ok so here's the plan:
 1. Learn OpenFOAM
