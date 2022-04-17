@@ -1,4 +1,6 @@
 import random
+import sys
+
 import numpy as np
 
 
@@ -10,16 +12,23 @@ class resultsWriter:
         self.separator = '/'
         self.header    = 'h'
         self.array     = 'a'
-        self.codec = {'0': b'\xdb', '1': b'\xd8', '2': b'\xd3', '3': b'\x21', '4': b'\x8c', '5': b'\xa3', '6': b'\xd9',
-                      '7': b'\xe4', '8': b'\x9f', '9': b'\xee', '.': b'\x85', '-': b'\x56',
-                      'x': b'\x2e', 'y': b'\x8b', 'z': b'\xcb', 'u': b'\xa2', 'v': b'\x3a', 'w': b'\x14', 'p': b'\xa1',
-                      self.delimiter: b'\xc0', self.newline: b'\x42', self.separator: b'\x8f', self.header: b'\x4d', self.array: b'\x1c'}
+        self.codec = {'0': b'\xdb', '1': b'\xd8', '2': b'\xd3', '3': b'\x89', '4': b'\x8c', '5': b'\xa3', '6': b'\xd9',
+                      '7': b'\xe4', '8': b'\x9f', '9': b'\xee', '.': b'\x85', '-': b'\xb4',
+                      'x': b'\xde', 'y': b'\x8b', 'z': b'\xcb', 'u': b'\xa2', 'v': b'\x1b', 'w': b'\x14', 'p': b'\xa1',
+                      self.delimiter: b'\xc0', self.newline: b'\xf5', self.separator: b'\x17', self.header: b'\xca', self.array: b'\x1c'}
 
     def writeFileFromData(self, a_x, a_y, a_z, a_u, a_v, a_w, a_p, a_FileName):
 
         # ================================================================
         # create header string including array order and data scramble key
         # ================================================================
+        # testByte = b''
+        # testString = '0123456789.-xyzuvwp,_/ha'
+        # for val in list(testString):
+        #     testByte += self.codec[val]
+        # print(testString)
+        # print(testByte)
+        # sys.exit()
 
         # --------------------
         # create scramble keys
