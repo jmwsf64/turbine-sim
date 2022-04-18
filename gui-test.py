@@ -1,29 +1,48 @@
 from kivy.app import App
 from kivy.uix.button import Button
-from plyer import filechooser
+from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.gridlayout import GridLayout
+import lib.modules.gui.guiModule as guiF
 
 
-# ============================
-# kivy application development
-# ============================
+# ======================
+# kivy application class
+# ======================
 class SpinSimApp(App):
 
     def build(self):
-        spinSimApp = SpinSim()
-        return spinSimApp
+
+        # ------------------------
+        # create layout parameters
+        # ------------------------
+        sizeX = 800
+        sizeY = 800
+        layout = FloatLayout(size=(sizeX, sizeY))
+
+        # --------------
+        # create buttons
+        # --------------
+        btn1 = Button(text='Hello World!',
+                      size_hint=(0.15, 0.1),
+                      pos=(0, 300))
+        btn2 = Button(text='Select an STL file',
+                      size_hint=(0.35, 0.1),
+                      pos=(500, 0),
+                      on_press=guiF.chooseStl)
+
+        # ---------------------
+        # add buttons to layout
+        # ---------------------
+        layout.add_widget(btn1)
+        layout.add_widget(btn2)
+
+        # -------------
+        # return layout
+        # -------------
+        return layout
 
 
-if __name__ == '__main__':
-
-    # -------------------
-    # hello world example
-    # -------------------
-    SpinSimApp().run()
-
-    # -------------------
-    # file select example
-    # -------------------
-    # path = filechooser.open_file(title="Choose an STL file",
-    #                              filters=[("Stereo-lithography file (.stl)", "*.stl")],
-    #                              multiple=True)
-    # print(path)
+# ====================
+# run kivy application
+# ====================
+SpinSimApp().run()

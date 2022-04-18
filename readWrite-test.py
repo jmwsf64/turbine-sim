@@ -1,6 +1,5 @@
 import numpy as np
-import lib.modules.readers.classResultsReader as C_RRD
-import lib.modules.writers.classResultsWriter as C_RWT
+import lib.modules.io.classResultsReadWrite as C_RDWRT
 
 # ========================================
 # data to read/write in custom file format
@@ -67,14 +66,13 @@ p = np.array([[[3.00217868, 0.8839569, 4.12235872, 6.84964285, 5.35324116],
 # ===========================================
 # write the data to the specified output file
 # ===========================================
-writer = C_RWT.resultsWriter()
-writer.writeFileFromData(x, y, z, u, v, w, p, 'output.spnsm')
+resultsIO = C_RDWRT.resultsReadWrite()
+resultsIO.writeDataToFile(x, y, z, u, v, w, p, 'output.spnsm')
 
 # =========================================
 # read the output file and print the arrays
 # =========================================
-reader = C_RRD.resultsReader()
-r_x, r_y, r_z, r_u, r_v, r_w, r_p = reader.readDataFromFile('output.spnsm')
+r_x, r_y, r_z, r_u, r_v, r_w, r_p = resultsIO.readDataFromFile('output.spnsm')
 
 # ============================================
 # print results to verify correct input/output
