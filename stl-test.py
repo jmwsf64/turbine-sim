@@ -1,11 +1,11 @@
-from lib.modules.io import classSTLReader as C_STL
+import lib.modules.io.classSTLReader as C_STL
 
 
 # =======================
 # example stl file import
 # =======================
 stlIn = C_STL.stlInput()
-box   = stlIn.importSTL('lib/files/testing/box.stl')
+box   = stlIn.importSTL('lib/files/testing/stl/box.stl')
 
 # ===================
 # imported properties
