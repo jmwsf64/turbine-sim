@@ -1,30 +1,21 @@
-# PROBLEM
+## Tasks
 
-* MUST FIND CFD SOLVER TO USE. OPENFOAM IS LINUX ONLY.
-
-# SOLUTION
-
-Ok so here's the plan:
-1. Learn OpenFOAM
-   * I need to get a case running on OpenFOAM so that I know how to use it
-   * Try fictitious domain GitHub repo linked from pdf in 'resources' directory
-   * If this doesn't make any sense, start with a simple channel flow then fictitious domain
-   * Solvers should just be incompressible, unsteady, NS flow
-2. Implementation:
-   * Once I know what solvers are being used, edit these libraries for this program
-   * Probably keep them as C++ for speed
-     * Learn about calling C++ functions from Python scripts
-   * Need to change output formats
-     * Create proprietary format?
-     * Might need to do this to prevent possible license issues
-     * Will need to create reader for formats as well to view results in program
-
-# Back to our regularly scheduled program
+* ~~STL Reader~~
+* ~~Results custom encoding~~
+* ~~Basic GUI Application to Learn Kivy Syntax~~
+* Meshing code
+* Codec for Mesh
+* Codec for Configuration
+* Computational core code
+* App GUI Development
+* Speed tests/improvements
+* Validation
+* Release
 
 ## Project Overview
 
 * Working name: **_SpinSim_**
-* Computational software for single/multiple flow turbines
+* Computational software for single turbine development and Wind Farm Interaction
 * Utilizes fictitious domain method for simulation
 * Restricts movement of blades around rotational axis
 
