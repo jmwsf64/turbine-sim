@@ -9,6 +9,7 @@ import numpy as np
 val = np.random.randint(1, high=255)
 print(val)
 
+
 # generate random data to use in readWrite-test.py
 # x = np.array([[[0, 1, 2, 3, 4],
 #                [5, 6, 7, 8, 9]],
@@ -17,7 +18,6 @@ print(val)
 #               [[20, 21, 22, 23, 24],
 #                [25, 26, 27, 28, 29]]])
 # dims = x.shape
-# print(dims)
 
 # u = np.random.normal(loc=0.0, scale=1.0, size=dims)
 # u = np.random.random(dims)*10

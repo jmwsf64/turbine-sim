@@ -1,8 +1,9 @@
 class simConfiguration:
 
-    def __init__(self):
-        self.compressibility = 'i'
-        self.turbulenceModel = 'L'
+    def __init__(self, a_CaseID):
+        self.caseID          = a_CaseID
+        self.compressibility = None
+        self.turbulenceModel = None
         self.writeCodec = {'i': b'\x01', 'L': b'\x02'}
         self.readCodec  = {'01': 'i', '02': 'L'}
 

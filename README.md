@@ -3,11 +3,14 @@
 * ~~STL Reader~~
 * ~~Results custom encoding~~
 * ~~Basic GUI Application to Learn Kivy Syntax~~
-* Meshing code
+* Meshing algorithm
 * Codec for Mesh
 * Codec for Configuration
 * Computational core code
-* App GUI Development
+* Program settings read/write
+* Case settings read/write
+* Create custom icons
+* Final GUI Development
 * Speed tests/improvements
 * Validation
 * Release
@@ -23,10 +26,10 @@
 
 * Uses Python/C++ for computational code
 * GUI Development
-  * Version 1 will use [Kivy](https://kivy.org/doc/stable/)
-  * Version 2 can use Qt5 given enough income
-    * Can be fully developed before Version 1 Release
-    * Commercial license must be purchased before this version is released
+    * Version 1 will use [Kivy](https://kivy.org/doc/stable/)
+    * Version 2 can use Qt5 given enough income
+        * Can be fully developed before Version 1 Release
+        * Commercial license must be purchased before this version is released
 
 ## Required Modules
 
